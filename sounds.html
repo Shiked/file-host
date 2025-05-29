@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sound Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 40px;
+            background: #f8f8f8;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .audio-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .audio-block {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .filename {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" style="font-size: 1.2em;">← Back to Image Gallery</a>
+    </nav>
+    <h1>Sound Gallery</h1>
+    <div class="audio-list" id="audioList"></div>
+
+    <script>
+        const sounds = [
+            "beep.ogg",
+            "theme.ogg",
+            "soundtrack.mp3"
+            // Add more filenames here
+        ];
+
+        const container = document.getElementById('audioList');
+
+        sounds.forEach(file => {
+            const block = document.createElement('div');
+            block.className = 'audio-block';
+
+            const label = document.createElement('div');
+            label.className = 'filename';
+            label.textContent = file;
+
+            const audio = document.createElement('audio');
+            audio.controls = true;
+
+            const source = document.createElement('source');
+            source.src = `sounds/${file}`;
+            source.type = file.endsWith('.mp3') ? 'audio/mpeg' : 'audio/ogg';
+
+            audio.appendChild(source);
+            block.appendChild(label);
+            block.appendChild(audio);
+            container.appendChild(block);
+        });
+    </script>
+</body>
+
+</html>
