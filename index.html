@@ -122,8 +122,16 @@
       <div class="filename">AI-rocket.gif</div>
     </div>
     <div class="gallery-item">
+      <img src="images/bPP-ad.webp" alt="fun.gif">
+      <div class="filename">bPP-ad.webp</div>
+    </div>
+    <div class="gallery-item">
       <img src="images/Bub.webp" alt="fun.gif">
-      <div class="filename">AI-rocket.gif</div>
+      <div class="filename">Bub.webp</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/Fake-tun.webp" alt="fun.gif">
+      <div class="filename">Fake-tun.webp</div>
     </div>
     <!-- .webm Video -->
     <div class="gallery-item">
@@ -135,12 +143,24 @@
     </div>
   </div>
 
-  <script>
-    const toggleBtn = document.getElementById('toggleTheme');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
-  </script>
+<script>
+  const toggleBtn = document.getElementById('toggleTheme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Apply saved preference or system preference
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    document.body.classList.add('dark');
+  }
+
+  // Toggle on button click
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>
+
 
 </body>
 </html>
