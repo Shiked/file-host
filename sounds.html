@@ -1,79 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Sound Gallery</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            padding: 40px;
-            background: #f8f8f8;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .audio-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .audio-block {
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .filename {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Sounds - shikes.space</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- No LightGallery needed for sounds page -->
 </head>
+<body data-page-title="SOUNDS" data-breadcrumbs='[{"name": "Home", "url": "index.html"}, {"name": "Sounds", "url": "Sounds.html"}]'>
 
-<body>
-    <nav>
-        <a href="index.html" style="font-size: 1.2em;">← Back to Image Gallery</a>
-    </nav>
-    <h1>Sound Gallery</h1>
-    <div class="audio-list" id="audioList"></div>
+  <header id="page-header-placeholder"></header>
+  <nav id="main-nav-placeholder"></nav>
+  <div id="sitetree-placeholder"></div>
 
-    <script>
-        const sounds = [
-            "wenk-wenk-wenk.ogg",
-            "rocket-blast-off-and-countdown.ogg"
-            // Add more filenames here
-        ];
+  <main>
+    <details open class="searchable-section">
+      <summary>Sounds</summary>
+      <div class="section-content">
 
-        const container = document.getElementById('audioList');
+        <div class="card searchable-item" 
+             id="rocket-blast-off-and-countdown-ogg" 
+             data-filename="rocket-blast-off-and-countdown.ogg" 
+             data-tags="rocket, launch, countdown, space, sound effect, sfx, ogg">
+          <audio controls preload="metadata">
+            <source src="Sounds/rocket-blast-off-and-countdown.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="filename">rocket-blast-off-and-countdown.ogg</div>
+          <button class="copy-btn" data-url="https://file.shikes.space/Sounds/rocket-blast-off-and-countdown.ogg" onclick="copyLink(event, this)">🔗 Copy link</button>
+        </div>
 
-        sounds.forEach(file => {
-            const block = document.createElement('div');
-            block.className = 'audio-block';
+        <div class="card searchable-item" 
+             id="wenk-wenk-wenk-ogg"
+             data-filename="wenk-wenk-wenk.ogg"
+             data-tags="wenk, meme, sound, funny, ogg">
+          <audio controls preload="metadata">
+            <source src="Sounds/wenk-wenk-wenk.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="filename">wenk-wenk-wenk.ogg</div>
+          <button class="copy-btn" data-url="https://file.shikes.space/Sounds/wenk-wenk-wenk.ogg" onclick="copyLink(event, this)">🔗 Copy link</button>
+        </div>
+        <!-- More sound files -->
+      </div>
+    </details>
+  </main>
 
-            const label = document.createElement('div');
-            label.className = 'filename';
-            label.textContent = file;
-
-            const audio = document.createElement('audio');
-            audio.controls = true;
-
-            const source = document.createElement('source');
-            source.src = `sounds/${file}`;
-            source.type = file.endsWith('.mp3') ? 'audio/mpeg' : 'audio/ogg';
-
-            audio.appendChild(source);
-            block.appendChild(label);
-            block.appendChild(audio);
-            container.appendChild(block);
-        });
-    </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
-
 </html>

@@ -2,169 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Media Gallery</title>
-  <style>
-    :root {
-      --bg-color: #f4f4f4;
-      --text-color: #000;
-      --card-bg: #fff;
-      --link-color: #007acc;
-    }
-    body.dark {
-      --bg-color: #181818;
-      --text-color: #eee;
-      --card-bg: #2a2a2a;
-      --link-color: #66d9ef;
-    }
-
-    body {
-      background: var(--bg-color);
-      color: var(--text-color);
-      font-family: sans-serif;
-      padding: 40px;
-      margin: 0;
-      transition: background 0.2s ease, color 0.2s ease;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    nav {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    nav a {
-      font-size: 1.2em;
-      margin: 0 10px;
-      text-decoration: none;
-      color: var(--link-color);
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .gallery-item {
-      background: var(--card-bg);
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      text-align: center;
-      max-width: 300px;
-    }
-
-    img, video {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .filename {
-      margin-top: 10px;
-      font-size: 0.9em;
-      color: var(--text-color);
-      opacity: 0.7;
-    }
-
-    .dark-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-
-    .dark-toggle button {
-      background: var(--card-bg);
-      color: var(--text-color);
-      border: 1px solid var(--link-color);
-      padding: 6px 12px;
-      font-size: 0.9em;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .dark-toggle button:hover {
-      background: var(--link-color);
-      color: var(--bg-color);
-    }
-  </style>
+  <title>Home - shikes.space Files</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- LightGallery CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css" />
 </head>
-<body>
+<body data-page-title="shikes.space" data-breadcrumbs='[{"name": "Home", "url": "index.html"}]'>
 
-  <div class="dark-toggle">
-    <button id="toggleTheme">🌓 Toggle Dark Mode</button>
-  </div>
+  <header id="page-header-placeholder">
+    <!-- Common header content will be loaded here by JS -->
+  </header>
 
-  <h1>🖼️ Media Gallery</h1>
-
-  <nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="sounds.html">🎵 Sound Gallery</a>
+  <nav id="main-nav-placeholder">
+    <!-- Common navigation links will be loaded here by JS -->
   </nav>
 
-  <div class="gallery">
-    <!-- Images -->
-    <div class="gallery-item">
-      <img src="images/test.png" alt="test.png">
-      <div class="filename">test.png</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/Rock_meme_WYD.png" alt="photo1.jpg">
-      <div class="filename">Rock_meme_WYD.jpg</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/AI-rocket.gif" alt="fun.gif">
-      <div class="filename">AI-rocket.gif</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/bPP-ad.webp" alt="fun.gif">
-      <div class="filename">bPP-ad.webp</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/Bub.webp" alt="fun.gif">
-      <div class="filename">Bub.webp</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/Fake-tun.webp" alt="fun.gif">
-      <div class="filename">Fake-tun.webp</div>
-    </div>
-    <div class="gallery-item">
-      <img src="images/bPP-ad2.webp" alt="fun.gif">
-      <div class="filename">bPP-ad2.webp</div>
-    </div>
-    <!-- .webm Video -->
-    <div class="gallery-item">
-      <video controls>
-        <source src="images/AI-rocket.webm" type="video/webm">
-        Your browser does not support the video tag.
-      </video>
-      <div class="filename">AI-rocket.webm</div>
-    </div>
+  <div id="sitetree-placeholder">
+    <!-- Common site tree will be loaded here by JS -->
   </div>
 
-<script>
-  const toggleBtn = document.getElementById('toggleTheme');
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  <main>
+    <p>
+      What's up gamers. Welcome to my file hosting site.
+    </p>
+    <p>Use the site tree on the left, or search while on specific pages to find files.</p>
+  </main>
 
-  // Apply saved preference or system preference
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-    document.body.classList.add('dark');
-  }
+  <!-- LightGallery JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
 
-  // Toggle on button click
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    const isDark = document.body.classList.contains('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
-</script>
-
-
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
