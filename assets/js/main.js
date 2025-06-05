@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{const partialsBaseUrl='_includes/';const currentTheme=localStorage.getItem('theme');if(currentTheme==='dark'){document.body.classList.add('dark-theme');}
+document.addEventListener('DOMContentLoaded',()=>{const partialsBaseUrl='/_includes/';const currentTheme=localStorage.getItem('theme');if(currentTheme==='dark'){document.body.classList.add('dark-theme');}
 async function loadPartial(elementId,filePath,callback){const placeholder=document.getElementById(elementId);if(placeholder){try{const response=await fetch(filePath);if(!response.ok){throw new Error(`Failed to load ${filePath}:${response.statusText}`);}
 const html=await response.text();placeholder.innerHTML=html;if(callback)callback();}catch(error){console.error('Error loading partial:',error);placeholder.innerHTML=`<p style="color:red;">Error loading content for ${elementId}.</p>`;}}}
 loadPartial('page-header-placeholder',partialsBaseUrl+'_header.html',()=>{const pageTitleH1=document.getElementById('pageTitleH1');const pageTitleFromBody=document.body.dataset.pageTitle;if(pageTitleH1&&pageTitleFromBody){pageTitleH1.textContent=pageTitleFromBody;}
