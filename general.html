@@ -1,62 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>General Files - shikes.space</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="/assets/vendor/lightgallery/css/lightgallery-bundle.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>General Files - shikes.space</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- LightGallery CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css" />
-</head>
+  <body data-page-title="GENERAL" data-breadcrumbs='[{"name": "Home", "url": "index.html"}, {"name": "General", "url": "general.html"}]'>
+    <header id="page-header-placeholder"></header>
+    <nav id="main-nav-placeholder"></nav>
+    <div id="sitetree-placeholder"></div>
 
-<body data-page-title="GENERAL"
-  data-breadcrumbs='[{"name": "Home", "url": "index.html"}, {"name": "General", "url": "general.html"}]'>
+    <main>
+      <details open class="searchable-section">
+        <summary>General • Images</summary>
+        <div class="section-content gallery lightgallery-container" id="general-images-gallery">
+          <a href="General/Images/test.png" class="card searchable-item gallery-item" id="test-png" data-filename="test.png" data-tags="test, placeholder, png, general" data-sub-html="<h4>test.png</h4><p>A test PNG image.</p>">
+            <div class="image-container">
+              <img src="General/Images/test.png" alt="A simple test image..." loading="lazy" />
+            </div>
+            <div class="filename">test.png</div>
+            <button class="copy-btn" data-url="https://file.shikes.space/General/Images/test.png" onclick="copyLink(event, this)">🔗 Copy link</button>
+          </a>
 
-  <header id="page-header-placeholder"></header>
-  <nav id="main-nav-placeholder"></nav>
-  <div id="sitetree-placeholder"></div>
+          <a href="General/Images/AI-rocket.gif" class="card searchable-item gallery-item" id="AI-rocket-gif" data-filename="AI-rocket.gif" data-tags="ai, rocket, animation, gif, technology, general" data-sub-html="<h4>AI-rocket.gif</h4><p>Animation of a rocket with AI text.</p>">
+            <div class="image-container">
+              <img src="General/Images/AI-rocket.gif" alt="Animated GIF: A stylized rocket launching upwards with the letters 'AI' prominently displayed on its side." loading="lazy" />
+            </div>
+            <div class="filename">AI-rocket.gif</div>
+            <button class="copy-btn" data-url="https://file.shikes.space/General/Images/AI-rocket.gif" onclick="copyLink(event, this)">🔗 Copy link</button>
+          </a>
+        </div>
+      </details>
+    </main>
 
-  <main>
-    <details open class="searchable-section">
-      <summary>General • Images</summary>
-      <div class="section-content gallery lightgallery-container" id="general-images-gallery">
-
-        <a href="General/Images/test.png" class="card searchable-item gallery-item" id="test-png"
-          data-filename="test.png" data-tags="test, placeholder, png, general"
-          data-sub-html="<h4>test.png</h4><p>A test PNG image.</p>">
-          <div class="image-container">
-            <img src="General/Images/test.png" alt="A simple test image..." loading="lazy">
-          </div>
-          <div class="filename">test.png</div>
-          <button class="copy-btn" data-url="https://file.shikes.space/General/Images/test.png"
-            onclick="copyLink(event, this)">🔗 Copy link</button>
-        </a>
-
-
-        <a href="General/Images/AI-rocket.gif" class="card searchable-item gallery-item" id="AI-rocket-gif"
-          data-filename="AI-rocket.gif" data-tags="ai, rocket, animation, gif, technology, general"
-          data-sub-html="<h4>AI-rocket.gif</h4><p>Animation of a rocket with AI text.</p>">
-          <div class="image-container">
-            <img src="General/Images/AI-rocket.gif"
-              alt="Animated GIF: A stylized rocket launching upwards with the letters 'AI' prominently displayed on its side."
-              loading="lazy">
-          </div>
-          <div class="filename">AI-rocket.gif</div>
-          <button class="copy-btn" data-url="https://file.shikes.space/General/Images/AI-rocket.gif"
-            onclick="copyLink(event, this)">🔗 Copy link</button>
-        </a>
-      </div>
-    </details>
-  </main>
-
-  <!-- LightGallery JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
-  <script src="assets/js/main.js" defer></script>
-</body>
-
+    <!-- LightGallery JS -->
+    <script src="/assets/vendor/lightgallery/js/lightgallery.min.js"></script>
+    <script src="/assets/vendor/lightgallery/js/lg-thumbnail.min.js"></script>
+    <script src="/assets/vendor/lightgallery/js/lg-fullscreen.min.js"></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>

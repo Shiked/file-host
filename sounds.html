@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sounds - shikes.space</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- No LightGallery needed for sounds page -->
-</head>
-<body data-page-title="SOUNDS" data-breadcrumbs='[{"name": "Home", "url": "index.html"}, {"name": "Sounds", "url": "sounds.html"}]'>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sounds - shikes.space</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- No LightGallery needed for sounds page -->
+  </head>
+  <body data-page-title="SOUNDS" data-breadcrumbs='[{"name": "Home", "url": "index.html"}, {"name": "Sounds", "url": "sounds.html"}]'>
+    <header id="page-header-placeholder"></header>
+    <nav id="main-nav-placeholder"></nav>
+    <div id="sitetree-placeholder"></div>
 
-  <header id="page-header-placeholder"></header>
-  <nav id="main-nav-placeholder"></nav>
-  <div id="sitetree-placeholder"></div>
+    <main>
+      <details open class="searchable-section">
+        <summary>Sounds</summary>
+        <div class="section-content">
+          <div class="card searchable-item" id="rocket-blast-off-and-countdown-ogg" data-filename="rocket-blast-off-and-countdown.ogg" data-tags="rocket, launch, countdown, space, sound effect, sfx, ogg">
+            <audio controls preload="metadata">
+              <source src="sounds/rocket-blast-off-and-countdown.ogg" type="audio/ogg" />
+              Your browser does not support the audio element.
+            </audio>
+            <div class="filename">rocket-blast-off-and-countdown.ogg</div>
+            <button class="copy-btn" data-url="https://file.shikes.space/sounds/rocket-blast-off-and-countdown.ogg" onclick="copyLink(event, this)">🔗 Copy link</button>
+          </div>
 
-  <main>
-    <details open class="searchable-section">
-      <summary>Sounds</summary>
-      <div class="section-content">
-
-        <div class="card searchable-item" 
-             id="rocket-blast-off-and-countdown-ogg" 
-             data-filename="rocket-blast-off-and-countdown.ogg" 
-             data-tags="rocket, launch, countdown, space, sound effect, sfx, ogg">
-          <audio controls preload="metadata">
-            <source src="sounds/rocket-blast-off-and-countdown.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
-          </audio>
-          <div class="filename">rocket-blast-off-and-countdown.ogg</div>
-          <button class="copy-btn" data-url="https://file.shikes.space/sounds/rocket-blast-off-and-countdown.ogg" onclick="copyLink(event, this)">🔗 Copy link</button>
+          <div class="card searchable-item" id="wenk-wenk-wenk-ogg" data-filename="wenk-wenk-wenk.ogg" data-tags="wenk, meme, sound, funny, ogg">
+            <audio controls preload="metadata">
+              <source src="sounds/wenk-wenk-wenk.ogg" type="audio/ogg" />
+              Your browser does not support the audio element.
+            </audio>
+            <div class="filename">wenk-wenk-wenk.ogg</div>
+            <button class="copy-btn" data-url="https://file.shikes.space/sounds/wenk-wenk-wenk.ogg" onclick="copyLink(event, this)">🔗 Copy link</button>
+          </div>
+          <!-- More sound files -->
         </div>
+      </details>
+    </main>
 
-        <div class="card searchable-item" 
-             id="wenk-wenk-wenk-ogg"
-             data-filename="wenk-wenk-wenk.ogg"
-             data-tags="wenk, meme, sound, funny, ogg">
-          <audio controls preload="metadata">
-            <source src="sounds/wenk-wenk-wenk.ogg" type="audio/ogg">
-            Your browser does not support the audio element.
-          </audio>
-          <div class="filename">wenk-wenk-wenk.ogg</div>
-          <button class="copy-btn" data-url="https://file.shikes.space/sounds/wenk-wenk-wenk.ogg" onclick="copyLink(event, this)">🔗 Copy link</button>
-        </div>
-        <!-- More sound files -->
-      </div>
-    </details>
-  </main>
-
-  <script src="assets/js/main.js" defer></script>
-</body>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>
