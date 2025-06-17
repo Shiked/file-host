@@ -1,0 +1,222 @@
+[
+  {
+    "id": "ai-rocket-gif-general",
+    "path": "General/Images/AI-rocket.gif",
+    "name": "AI Rocket Animation",
+    "type": "image",
+    "format": "gif",
+    "tags": ["ai", "rocket", "animation", "technology", "general", "gif"],
+    "description": "Stylized animated rocket launching upwards with 'AI' on its side.",
+    "display": true  
+  },
+  {
+    "id": "test-png-general",
+    "path": "General/Images/test.png",
+    "name": "Test Pattern PNG",
+    "type": "image",
+    "format": "png",
+    "tags": ["test", "placeholder", "png", "general", "pattern"],
+    "description": "A simple test image with geometric shapes and the word 'test'.",
+    "display": true
+  },
+  {
+    "id": "rocket-blast-off-sounds",
+    "path": "Sounds/rocket-blast-off-and-countdown.ogg",
+    "name": "Rocket Countdown & Blast Off SFX",
+    "type": "sound",
+    "format": "ogg",
+    "tags": ["rocket", "launch", "countdown", "space", "sound effect", "sfx", "audio", "ogg"],
+    "description": "Sound effect of a rocket countdown followed by a launch.",
+    "display": false
+  },
+  {
+    "id": "wenk-wenk-sounds",
+    "path": "Sounds/wenk-wenk-wenk.ogg",
+    "name": "Wenk Wenk Meme Sound",
+    "type": "sound",
+    "format": "ogg",
+    "tags": ["wenk", "meme", "sound", "funny", "audio", "ogg"],
+    "description": "The popular 'wenk' meme sound.",
+    "display": true 
+  },
+  {
+    "id": "another-one-tm-bonkpp",
+    "path": "TM/BonkPP/another-one.mp3",
+    "name": "DJ Khaled - Another One (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["dj khaled", "another one", "meme", "sound", "bonkpp", "trackmania", "audio", "mp3"],
+    "description": "DJ Khaled 'Another One' sound clip, used in BonkPP.",
+    "display": false 
+  },
+  {
+    "id": "dry-fart-tm-bonkpp",
+    "path": "TM/BonkPP/dry-fart.mp3",
+    "name": "Dry Fart SFX (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["fart", "sound effect", "sfx", "funny", "bonkpp", "trackmania", "audio", "mp3"],
+    "description": "A dry fart sound effect.",
+    "display": false
+  },
+    {
+    "id": "duck-toy-bonkpp",
+    "path": "TM/BonkPP/duck-toy-sound.mp3",
+    "name": "Duck Toy SFX (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["duck", "toy", "sound", "bonkpp", "audio", "mp3"],
+    "description": "Squeaky duck toy sound effect used in BonkPP.",
+    "display": false
+  },
+  {
+    "id": "error-sound-bonkpp",
+    "path": "TM/BonkPP/erro.mp3",
+    "name": "Error Sound (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["error", "sound", "bonkpp", "glitch", "audio", "mp3"],
+    "description": "Short error beep or glitch sound used in BonkPP.",
+    "display": false
+  },
+  {
+    "id": "wenk-alt-bonkpp",
+    "path": "TM/BonkPP/mac-quack.mp3",
+    "name": "Wenk Alt (Mac Quack) (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["wenk", "quack", "meme", "mac", "bonkpp", "audio", "mp3"],
+    "description": "Alternate 'wenk' or quack sound effect for BonkPP.",
+    "display": false
+  },
+  {
+    "id": "punch-bonkpp",
+    "path": "TM/BonkPP/punch.mp3",
+    "name": "Punch SFX (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["punch", "impact", "fight", "bonkpp", "audio", "mp3"],
+    "description": "Classic punch impact sound used in BonkPP.",
+    "display": false
+  },
+  {
+    "id": "rizz-bonkpp",
+    "path": "TM/BonkPP/rizz-sound-effect.mp3",
+    "name": "Rizz Sound Effect (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["rizz", "sound", "effect", "bonkpp", "audio", "mp3"],
+    "description": "Stylized Rizz meme sound effect from BonkPP.",
+    "display": false
+  },
+  {
+    "id": "bwooomp-bonkpp",
+    "path": "TM/BonkPP/spongebob-boowomp.mp3",
+    "name": "SpongeBob Bwooomp (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["spongebob", "boowomp", "bwooomp", "funny", "bonkpp", "audio", "mp3"],
+    "description": "Deep swoosh sound from SpongeBob — 'bwooomp!'",
+    "display": false
+  },
+  {
+    "id": "ta-da-bonkpp",
+    "path": "TM/BonkPP/ta-da.mp3",
+    "name": "Ta Da Jingle (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["ta da", "jingle", "success", "sound", "bonkpp", "audio", "mp3"],
+    "description": "Short success jingle saying 'ta da!'",
+    "display": false
+  },
+  {
+    "id": "taco-gong-bonkpp",
+    "path": "TM/BonkPP/taco-bell-bong-sfx.mp3",
+    "name": "Taco Bell Gong (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["taco bell", "gong", "bell", "bonkpp", "audio", "mp3"],
+    "description": "Sound reminiscent of the Taco Bell chime.",
+    "display": false
+  },
+  {
+    "id": "wyd-bonkpp",
+    "path": "TM/BonkPP/what-are-you-doing.mp3",
+    "name": "What Are You Doing?! (BonkPP)",
+    "type": "sound",
+    "format": "mp3",
+    "tags": ["what are you doing", "meme", "yell", "bonkpp", "audio", "mp3"],
+    "description": "Shouted line: 'What are you doing?!' — used in BonkPP.",
+    "display": false
+  },
+  {
+    "id": "bub-webp-tm-mapping",
+    "path": "TM/Mapping/Images/Bub.webp",
+    "name": "Bub Character Art (TrackMania Mapping)",
+    "type": "image",
+    "format": "webp",
+    "tags": ["bub", "bubble bobble", "pixel art", "gaming", "trackmania", "map asset", "image", "webp"],
+    "description": "Pixel art of Bub, the green bubble dragon, for TrackMania mapping.",
+    "display": false
+  },
+  {
+    "id": "bpp-ad-webp-tm-mapping",
+    "path": "TM/Mapping/Images/bPP-ad.webp",
+    "name": "bPP Advertisement 1 (TrackMania Mapping)",
+    "type": "image",
+    "format": "webp",
+    "tags": ["bpp", "advertisement", "ad", "bonkpp", "trackmania", "map asset", "image", "webp"],
+    "description": "Promotional advertisement image for bPP or BonkPP.",
+    "display": false
+  },
+  {
+    "id": "ai-rocket-video-tm-mapping",
+    "path": "TM/Mapping/Videos/AI-rocket.webm",
+    "name": "AI Rocket Video (TrackMania Mapping)",
+    "type": "video",
+    "format": "webm",
+    "tags": ["ai", "rocket", "video", "animation", "trackmania", "map asset", "webm"],
+    "description": "Video animation of the AI rocket, for TrackMania map assets.",
+    "display": false 
+  },
+  {
+    "id": "fake-tun-webp-tm-mapping",
+    "path": "TM/Mapping/Images/Fake-tun.webp",
+    "name": "Fake Tunnel Illusion (TrackMania Mapping)",
+    "type": "image",
+    "format": "webp",
+    "tags": ["fake tunnel", "illusion", "trackmania", "mapping", "image", "webp"],
+    "description": "Image depicting a fake tunnel illusion for TrackMania mapping.",
+    "display": false
+  },
+  {
+    "id": "rock-meme-wyd-png-tm-mapping",
+    "path": "TM/Mapping/Images/Rock_meme_WYD.png",
+    "name": "The Rock 'WYD' Meme (TrackMania Mapping)",
+    "type": "image",
+    "format": "png",
+    "tags": ["rock", "meme", "dwayne johnson", "eyebrow", "funny", "trackmania", "mapping", "image", "png"],
+    "description": "Meme image of Dwayne 'The Rock' Johnson with a raised eyebrow, often captioned 'What are you doing?'.",
+    "display": false
+  },
+  {
+    "id": "bpp-ad2-webp-tm-mapping",
+    "path": "TM/Mapping/Images/bPP-ad2.webp",
+    "name": "bPP Advertisement 2 (TrackMania Mapping)",
+    "type": "image",
+    "format": "webp",
+    "tags": ["bpp", "advertisement", "ad", "bonkpp", "trackmania", "map asset", "image", "webp", "version2"],
+    "description": "Second promotional advertisement image for bPP or BonkPP.",
+    "display": false
+  },
+  {
+    "id": "error-bonkwave-sfx",
+    "path": "Sounds/ERROR-Bonkwave-has-crashed.ogg",
+    "name": "ERROR Bonkwave Crashed SFX",
+    "type": "sound",
+    "format": "ogg",
+    "tags": ["ERROR", "meme", "sound", "Bonk", "audio", "ogg"],
+    "description": "Glitchy error sound saying 'Bonkwave has crashed.'",
+    "display": false
+  }
+]
