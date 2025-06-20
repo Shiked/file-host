@@ -1,6 +1,28 @@
-<manialink name="SubtitlesUI">
-  <frame posn="0 -75 1" halign="center" valign="bottom" z-index="10">
-    <quad id="subtitle-bg" style="Bgs1InRace" substyle="BgList" sizen="160 15" posn="0 0 0" bgcolor="000000AA" />
-    <label id="subtitle-text" text="" style="TextButtonMedium" sizen="150 10" posn="0 0.5 0.1" halign="center" valign="center" textsize="3" textcolor="FFFFFF" />
+<manialink name="SubtitlesUI" version="3">
+  <frame id="subtitle-frame" posn="0 -75 1" halign="center" valign="bottom" z-index="10">
+    <!-- Background quad (black, semi-transparent) -->
+    <quad 
+      id="subtitle-bg"
+      sizen="160 15"
+      posn="0 0 0"
+      bgcolor="000000AA"
+      style="Bgs1InRace"
+      substyle="BgList"
+      halign="center"
+      valign="center"
+    />
+    
+    <!-- Subtitle text label -->
+    <label 
+      id="subtitle-text"
+      text=""
+      sizen="150 10"
+      posn="0 0.5 0.1"
+      halign="center"
+      valign="center"
+      textsize="3"
+      textcolor="FFFFFF"
+      style="TextCardSmall"
+    />
   </frame>
 </manialink>
