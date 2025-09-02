@@ -210,6 +210,16 @@
     "display": false
   },
   {
+  "id": "snek-webp-tm-mapping",
+  "path": "TM/Mapping/Images/snek.webp",
+  "name": "Snek 4 bonking (TrackMania Mapping)",
+  "type": "image",
+  "format": "webp",
+  "tags": ["bonk", "bonkcup", "trackmania", "map asset", "image", "webp"],
+  "description": "Bonk cup snek.",
+  "display": false
+  },
+  {
     "id": "error-bonkwave-sfx",
     "path": "Sounds/ERROR-Bonkwave-has-crashed.ogg",
     "name": "ERROR Bonkwave Crashed SFX",
